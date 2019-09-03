@@ -1,0 +1,27 @@
+body {
+  margin: 50px;
+  background-color: lightblue;
+}
+
+#rock {
+  height: 200px;
+  width: 250px;
+}
+
+#scissors {
+  height: 200px;
+  width: 250px;
+}
+
+#paper {
+  height: 200px;
+  width: 200px;
+}
+
+.scroll_box {
+  height:300px;
+  width:250px;
+  border:1px solid black;
+  font:16px/26px Georgia, Garamond, Serif;
+  overflow:auto;
+}
