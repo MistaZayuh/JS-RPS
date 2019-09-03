@@ -19,9 +19,13 @@ body {
 }
 
 #scroll_box {
-  height:300px;
-  width:250px;
-  border:1px solid black;
-  font:16px/26px Georgia, Garamond, Serif;
-  overflow:auto;
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
+  font: 16px/26px Georgia, Garamond, Serif;
+  overflow: auto;
+}
+
+#clear {
+  margin-top: 10px;
 }
