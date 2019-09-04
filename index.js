@@ -43,7 +43,14 @@ function rpsGame(userThrow){
   } else if (compThrow == "paper" && userThrow == "rock"){
     winner = "The Computer";
   } //There should probably be an else here in case of an error, but the else was causing an error ¯\_(ツ)_/¯
-
-  var history = document.getElementById("scroll_box");
-  history.textContent += "You threw " + userThrow + ".\n The computer threw " + compThrow + ".\n " + winner + " won.\n" 
+  var endText = ["You threw ", userThrow, ". The computer threw ", compThrow, ". ", winner, " won."]
+  addElement(endText)
 };
+
+function addElement(endText){
+  var history = document.getElementById("scroll_box");
+  var newDiv = document.createElement("div");
+  var newContent = document.createTextNode(endText.join(''));
+  newDiv.appendChild(newContent)
+  history.appendChild(newDiv)
+}
