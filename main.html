@@ -7,14 +7,28 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <h1>Rock Paper Scissors yo</h1>
-  <p>click an image to start the game</p>
-  <img class="rpsimage" id="rock" src="http://pngimg.com/uploads/stone/stone_PNG13622.png" />
-  <img class="rpsimage" id="scissors" src="http://pngriver.com/wp-content/uploads/2018/04/Download-Scissors-PNG-File.png" />
-  <img class="rpsimage" id="paper" src="http://pngimg.com/uploads/paper_sheet/paper_sheet_PNG7245.png" />
-  <div id="scroll_box"></div>
-  <button id="clear">Clear History</button>
-
+    <h1>Rock Paper Scissors yo</h1>
+    <p>click an image to start the game</p>
+  <div class="pic_box">
+    <img class="rpsimage" id="rock" src="http://pngimg.com/uploads/stone/stone_PNG13622.png" />
+    <img class="rpsimage" id="scissors" src="http://pngriver.com/wp-content/uploads/2018/04/Download-Scissors-PNG-File.png" />
+    <img class="rpsimage" id="paper" src="http://pngimg.com/uploads/paper_sheet/paper_sheet_PNG7245.png" />
+  </div>
+  <div id="stats_container">
+    <div class="history_box">
+      <div id="scroll_box"></div>
+      <button id="clear">Clear History</button>
+    </div>
+    <div class="tally_box">
+      <p class="tally_text" id="win_box"></p>
+    </div>
+    <div class="tally_box">
+      <p class="tally_text" id="loss_box"></p>
+    </div>
+    <div class="tally_box">
+      <p class="tally_text" id="tie_box"></p>
+    </div>
+  </div>
 
   <script src="index.js"></script> <!-- The script tag needs to be at the bottom of the page so that the HTML loads first(top to bottom) -->
 </body>

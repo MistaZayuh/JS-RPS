@@ -29,3 +29,33 @@ body {
 #clear {
   margin-top: 10px;
 }
+
+.tally_box {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 300px;
+  align-self: flex-start;
+  padding: 10px;
+}
+
+.tally_text {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-self: flex-start;
+}
+/* I hate styling */
+#stats_container {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  width: stretch;
+  height: 500px;
+}
+
+.pic_box {
+  display: flex;
+  justify-content: space-evenly;
+}
